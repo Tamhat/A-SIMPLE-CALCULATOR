@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OpenSans", sans-serif;
+}
+body {
+  background: rgb(226, 200, 200);
+}
+.container {
+  height: 50vh;
+  margin: 20px auto;
+  width: 550px;
+}
+.calculator {
+  width: 320px;
+  height: 520px;
+  margin: 0 auto;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  background: #eef0f4;
+  border-radius: 30px;
+  box-shadow: 7.81px 7.81px 12px #bbbcc0, -7.81px -7.81px 12px #ffffff;
+}
+.result {
+  height: 120px;
+}
+.history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+.output {
+  text-align: right;
+  height: 60px;
+  margin: 30px 20px;
+  font-size: 30px;
+  overflow-x: hidden;
+}
+.keyboard {
+  height: 400px;
+  border-top: 3px solid rgb(219, 183, 183);
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 100%;
+  box-shadow: 6.61px 6.61px 17px #c3c9d0, -6.61px -6.61px 17px #ffffff;
+}
+.number,
+.empty {
+  background: linear-gradient(145deg, #ffffff, #dde3e9);
+  border-radius: 100%;
+  box-shadow: 6.61px 6.61px 17px #c3c9d0, -6.61px -6.61px 17px #ffffff;
+}
+.number,
+.operator {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background: linear-gradient(145deg, #16e0d6, #9cb8d3);
+  border-radius: 100%;
+  box-shadow: 6.61px 6.61px 17px #c3c9d0, -6.61px -6.61px 17px #ffffff;
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background: linear-gradient(145deg, #93ff00, #6dd900);
+  border-radius: 100%;
+  box-shadow: 0.3px 0.3px 29px #ffffff, -0.3px -0.3px 29px #ffffff;
+}
+button:nth-child(12) {
+  font-size: 20px;
+  /* background-color: #f08080; */
+  background: linear-gradient(145deg, #fa71ef, #d47979);
+  border-radius: 100%;
+  box-shadow: 6.61px 6.61px 17px #c3c9d0, -6.61px -6.61px 17px #ffffff;
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background: linear-gradient(145deg, #fdec00, #a19708);
+  border-radius: 100%;
+  box-shadow: 0.3px 0.3px 29px #ffffff, -0.3px -0.3px 29px #ffffff;
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: #9477af;
+  background: linear-gradient(145deg, #900fff, #640bbd);
+  border-radius: 94%;
+  box-shadow: 8.11px 8.11px 37px #797272, -8.11px -8.11px 37px #d3c0c0;
+}
